@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+      }
+      header ul {
+        display: flex;
+        justify-content: space-around;
+        background-color: chocolate;
+        padding: 10px;
+        list-style-type: none;
+      }
+      header a {
+        text-decoration: none;
+        color: black;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-style: oblique;
+      }
+      .movies {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .movies .card {
+        border: 1px solid black;
+        height: 470px;
+        width: 280px;
+        border-radius: 10px;
+      }
+      .movies img {
+        width: 100%;
+        height: 80%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .movies .card:hover {
+        transition-duration: 0.2s;
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="">Cartoon</a></li>
+        <li><a href="">Movies</a></li>
+        <li><a href="">Series</a></li>
+        <li><a href="">Short Films</a></li>
+      </ul>
+    </header>
+    <br /><br />
+    <main class="container">
+      <div class="movies">
+        <div class="card">
+          <img
+            src="https://th.bing.com/th/id/OIP.oE9iyaUOMyD1t258ZbdeLAHaEo?rs=1&pid=ImgDetMain"
+            alt=""
+          />
+          <p>
+            Doraemon is a male robotic earless cat that travels back in time
+            from the 22nd century to aid a preteen boy named Nobita Nobi.
+          </p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://th.bing.com/th/id/OIP.hChVNXkXy5qTWwm83IevVQHaFH?w=249&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+            alt=""
+          />
+          <p>
+            Titanic told the story of two fictional sweethearts on board the
+            famous ship as it struck an iceberg and disastrously sank
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://i.gadgets360cdn.com/large/21-nov_ENt_2_full_img_1732188354549.jpg"
+            alt=""
+          />
+          <p>
+            Mismatched is a Hindi-language romantic drama series on Netflix
+            about two teenagers who fall in love.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://th.bing.com/th/id/OIP.8vV_7UsakPGt_RxMypXUjQHaE8?w=268&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+            alt=""
+          />
+          <p>
+            This series is all about a Tom and Jerry couple who undergo a lot of
+            hurdles and obstacles in their love journey.
+          </p>
+        </div>
+      </div>
+
+      <!-- carousel components -->
+
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://th.bing.com/th/id/R.6d1fdc27608b4d9b0047e4da11ca694b?rik=sR%2fKz5RWGMSeDg&riu=http%3a%2f%2fwallsdesk.com%2fwp-content%2fuploads%2f2016%2f11%2fSpider-Man-High-Quality-Wallpapers.jpg&ehk=cOQdqMtcgHSdLjDMm0XXsbzBJpxdnmTpMqTIDaEUqiE%3d&risl=&pid=ImgRaw&r=0"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://wallpaperaccess.com/full/37946.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="d-flex justify-content-around my-5 flex-wrap">
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://i.pinimg.com/736x/6b/30/9a/6b309a2ccde102f45ef6c4e5c3f40052.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button type="button" class="btn btn-success">Success</button>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://i.pinimg.com/736x/6b/30/9a/6b309a2ccde102f45ef6c4e5c3f40052.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button type="button" class="btn btn-success">Success</button>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://i.pinimg.com/736x/6b/30/9a/6b309a2ccde102f45ef6c4e5c3f40052.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button type="button" class="btn btn-success">Success</button>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://i.pinimg.com/736x/6b/30/9a/6b309a2ccde102f45ef6c4e5c3f40052.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button type="button" class="btn btn-success">Success</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
