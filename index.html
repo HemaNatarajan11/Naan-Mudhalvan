@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      #container {
+        background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/20926.jpg");
+        height: 100vh;
+        background-size: cover;
+      }
+      .img {
+        height: 100px;
+        background-color: azure;
+      }
+      .prev {
+        position: absolute;
+        top: 40%;
+        transform: rotateY(180deg);
+        height: 50px;
+        width: 50px;
+      }
+      .next {
+        position: absolute;
+        top: 40%;
+        right: 0;
+        height: 50px;
+        width: 50px;
+      }
+      .minImg .myImg {
+        transition-duration: 1s;
+        z-index: 0;
+        opacity: 0.5;
+        height: 100px;
+      }
+      .minImg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      .minImg .active {
+        position: relative;
+        z-index: 1;
+        opacity: 1;
+        scale: 1.2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img
+        class="prev"
+        onclick="prev()"
+        src="https://th.bing.com/th/id/OIP.ajUTazasuIZokUecanW8tQHaHa?rs=1&pid=ImgDetMain"
+        alt=""
+      />
+      <img
+        class="next"
+        onclick="next()"
+        src="https://th.bing.com/th/id/OIP.ajUTazasuIZokUecanW8tQHaHa?rs=1&pid=ImgDetMain"
+        alt=""
+      />
+
+      <div class="minImg">
+        <img
+          class="myImg active"
+          src="https://4kwallpapers.com/images/walls/thumbs_3t/20926.jpg"
+          alt=""
+        />
+        <img
+          class="myImg"
+          src="https://4kwallpapers.com/images/walls/thumbs_2t/21610.jpg"
+          alt=""
+        />
+        <img
+          class="myImg"
+          src="https://4kwallpapers.com/images/walls/thumbs_2t/21413.jpg"
+          alt=""
+        />
+        <img
+          class="myImg"
+          src="https://4kwallpapers.com/images/walls/thumbs_2t/21086.jpg"
+          alt=""
+        />
+        <img
+          class="myImg"
+          src="https://4kwallpapers.com/images/walls/thumbs_3t/20940.png"
+          alt=""
+        />
+        <img
+          class="myImg"
+          src="https://4kwallpapers.com/images/walls/thumbs_3t/20910.jpg"
+          alt=""
+        />
+        <img
+          class="myImg"
+          src="https://4kwallpapers.com/images/walls/thumbs_2t/9809.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <script src="scrip.js"></script>
+  </body>
+</html>
